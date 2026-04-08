@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siddhesh Sagare — Frontend Developer</title>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Playfair+Display:wght@700;800&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+  <a href="#home" class="nav-logo">SS</a>
+  <ul class="nav-links">
+    <li><a href="#about">About</a></li>
+    <li><a href="#skills">Skills</a></li>
+    <li><a href="#projects">Projects</a></li>
+    <li><a href="#contact">Contact</a></li>
+    <li><a href="#info">Info</a></li>
+  </ul>
+  <div style="display:flex;align-items:center;gap:12px;">
+    <button class="theme-btn" onclick="toggleTheme()" id="themeBtn">☀ Light</button>
+    <button class="hamburger" onclick="toggleMenu()"><span></span><span></span><span></span></button>
+  </div>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#about" onclick="closeMenu()">About</a>
+  <a href="#skills" onclick="closeMenu()">Skills</a>
+  <a href="#projects" onclick="closeMenu()">Projects</a>
+  <a href="#contact" onclick="closeMenu()">Contact</a>
+  <a href="#info" onclick="closeMenu()">Info</a>
+</div>
+
+<section id="home">
+  <div class="hero-inner">
+    <img src="profile.jpg" alt="Siddhesh Sagare" class="hero-img">
+    <h1 class="hero-name">Siddhesh<br><span class="accent">Sagare.</span></h1>
+    <p class="hero-sub">Bachelor of Computer Applications</p>
+    <p class="hero-desc">I build things for the web. Currently studying BCA at Pratap College, Amalner and exploring frontend development.</p>
+    <div class="hero-btns">
+      <a href="#projects" class="btn-blue">View Projects</a>
+      <a href="#contact" class="btn-ghost">Get in Touch</a>
+    </div>
+  </div>
+</section>
+
+<div class="section-divider"></div>
+
+<div class="section-wrap" id="about">
+  <p class="section-eyebrow">About</p>
+  <h2 class="section-heading fade-up">A bit about me</h2>
+  <div class="about-grid fade-up">
+    <div class="about-text">
+      <p>I'm a BCA student from Amalner, Maharashtra, currently in my third &amp; final year at Pratap College. My interest in frontend development started with curiosity about how websites work and my passion in designs.</p>
+      <p>I've built a few projects for college exams related work including a live traffic awareness site and a locally hosted college social platform called CampusClique. I learn best by building real things.</p>
+      <p>Currently focused on sharpening my skills in HTML, CSS, JavaScript and beyond.</p>
+    </div>
+    <div class="about-card">
+      <div class="about-card-header">Info</div>
+      <div class="info-row"><span class="info-label">Name</span><span class="info-value">Siddhesh Sagare</span></div>
+      <div class="info-row"><span class="info-label">College</span><span class="info-value">Pratap College, Amalner</span></div>
+      <div class="info-row"><span class="info-label">Degree</span><span class="info-value">BCA</span></div>
+      <div class="info-row"><span class="info-label">Location</span><span class="info-value">Maharashtra, India</span></div>
+    </div>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<div class="section-wrap" id="skills">
+  <p class="section-eyebrow">Skills</p>
+  <h2 class="section-heading fade-up">What I work with</h2>
+  <div class="skills-grid fade-up">
+    <div class="skill-item"><span class="sk-icon">🌐</span>HTML5</div>
+    <div class="skill-item"><span class="sk-icon">🎨</span>CSS3</div>
+    <div class="skill-item"><span class="sk-icon">⚡</span>JavaScript</div>
+    <div class="skill-item"><span class="sk-icon">🐍</span>Python</div>
+    <div class="skill-item"><span class="sk-icon">⚙️</span>C / C++</div>
+    <div class="skill-item"><span class="sk-icon">🗄️</span>SQL</div>
+    <div class="skill-item"><span class="sk-icon">🔧</span>Git & GitHub</div>
+    <div class="skill-item"><span class="sk-icon">💻</span>VS Code</div>
+    <div class="skill-item"><span class="sk-icon">📱</span>Responsive Design</div>
+    <div class="skill-item"><span class="sk-icon">📊</span>MS Office</div>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<div class="section-wrap" id="projects">
+  <p class="section-eyebrow">Projects</p>
+  <h2 class="section-heading fade-up">Things I've built</h2>
+  <div class="fade-up">
+
+    <div class="project-item">
+      <div class="project-num">01</div>
+      <div>
+        <h3 class="project-name">Traffic Rules Awareness</h3>
+        <p class="project-desc">An informational website about traffic rules and signs aimed at rural areas. Covers traffic signs, acts, and links to official Maharashtra transport resources.</p>
+        <div class="project-tags"><span class="ptag">HTML</span><span class="ptag">CSS</span><span class="ptag">Live</span></div>
+      </div>
+      <div class="project-actions">
+        <a href="https://siddhesh24705.github.io/TrafficRulesWebsite/index.html" target="_blank" class="proj-link">↗ Live Demo</a>
+        <a href="https://github.com/Siddhesh24705" target="_blank" class="proj-link">⌥ GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-num">02</div>
+      <div>
+        <h3 class="project-name">CampusClique</h3>
+        <p class="project-desc">A college social platform where students and teachers can share notes, post images &amp; PDFs, ask study doubts, and customise their profiles with role-based access.</p>
+        <div class="project-tags"><span class="ptag">Full Stack</span><span class="ptag">Social Platform</span><span class="ptag">Local</span></div>
+      </div>
+      <div class="project-actions">
+        <span class="proj-link dim">⊘ Local</span>
+        <a href="https://github.com/Siddhesh24705" target="_blank" class="proj-link">⌥ GitHub</a>
+      </div>
+    </div>
+
+    <div class="project-item">
+      <div class="project-num">03</div>
+      <div>
+        <h3 class="project-name">CareHub</h3>
+        <p class="project-desc">UI design for an online doctor booking application created for a college hackathon. Focused on clean user flow and accessible interface design.</p>
+        <div class="project-tags"><span class="ptag">UI Design</span><span class="ptag">Canva</span><span class="ptag">Hackathon</span></div>
+      </div>
+      <div class="project-actions">
+        <span class="proj-link dim">⊘ Design Only</span>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<div class="section-wrap" id="contact">
+  <p class="section-eyebrow">Contact</p>
+  <div class="contact-box fade-up">
+    <h2 class="contact-heading">Let's connect</h2>
+    <p class="contact-sub">Open to opportunities, collaborations, or just a conversation.</p>
+    <div class="contact-cards">
+
+      <!-- Email hidden behind button — redirects to mail client without exposing address -->
+      <button type="button" class="contact-card" onclick="openEmail()">
+        <span class="card-icon">✉</span>
+        <span>Email Me</span>
+        <span class="card-label">Get in Touch</span>
+      </button>
+
+      <a href="https://www.linkedin.com/in/siddhesh-sagare-849714330" target="_blank" class="contact-card">
+        <span class="card-icon">in</span>
+        <span>LinkedIn</span>
+        <span class="card-label">Connect with me</span>
+      </a>
+
+      <a href="https://github.com/Siddhesh24705" target="_blank" class="contact-card">
+        <span class="card-icon">⌥</span>
+        <span>GitHub</span>
+        <span class="card-label">View my work</span>
+      </a>
+
+    </div>
+  </div>
+</div>
+
+<div class="section-divider"></div>
+
+<div class="section-wrap" id="info">
+  <p class="section-eyebrow">Info</p>
+  <h2 class="section-heading fade-up">About this portfolio</h2>
+  <div class="fade-up">
+    <div class="info-banner">
+      <p>This responsive portfolio website was created as part of the <strong>InternSpark Frontend Development Internship</strong>. The internship tasks were designed to teach modern frontend development, covering responsive design, component-based UI, API integration, state management, and deployment.</p>
+      <br>
+      <p>The tasks assigned by InternSpark helped in building professional-grade websites and applications from the ground up. All projects, designs, and code featured on this portfolio were independently built by <strong>Siddhesh Sagare</strong>.</p>
+    </div>
+  </div>
+</div>
+
+<footer>Designed &amp; built by Siddhesh Sagare &nbsp;·&nbsp; 2026</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
